@@ -9,12 +9,6 @@ package com.mycompany.decoratorhouseelsowiny;
  *
  * @author elsow
  */
-public class Driver {
-    public static void main(String[] args) {
-
-      MyHome smartHome = new MyHouseConcrete();
-      int Mortgage = smartHome.getCost();
-      System.out.println(Mortgage);
-   }
+public class Kitchen extends MyHome{
     
 }

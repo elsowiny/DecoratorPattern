@@ -9,12 +9,12 @@ package com.mycompany.decoratorhouseelsowiny;
  *
  * @author elsow
  */
-public class Driver {
-    public static void main(String[] args) {
-
-      MyHome smartHome = new MyHouseConcrete();
-      int Mortgage = smartHome.getCost();
-      System.out.println(Mortgage);
-   }
-    
+public class Living_Room extends MyHome {
+    public int area;
+    public int cost;
+    //would use double but no decimals in this case.
+    Living_Room(){
+        this.cost = 15421;
+    //when instatiated the cost is computed
+            }
 }

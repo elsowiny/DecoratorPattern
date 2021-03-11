@@ -12,7 +12,6 @@ package com.mycompany.decoratorhouseelsowiny;
  */
 import java.util.HashMap;
 public abstract class MyHome {
-    public HashMap<MyHome, Integer> homeDecorators = new HashMap<MyHome, Integer>();
     public int cost;
     public int area;
     public String desc = "Base Model with";
@@ -22,7 +21,7 @@ public abstract class MyHome {
     public String getDesc(){
         return desc;
     };
-    public abstract HashMap getHomeDecorators();
+    
     public abstract int cost();
     public abstract int area();
     

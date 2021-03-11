@@ -33,9 +33,6 @@ public abstract class HouseDecorator extends MyHome {
         return desc;
     };
     
-    public HashMap getHomeDecorators(){
-        return homeDecorators; 
-    };
     
     
     

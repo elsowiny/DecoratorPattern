@@ -5,34 +5,39 @@
  */
 package com.mycompany.decoratorhouseelsowiny;
 
-import java.util.*;
+import java.util.HashMap;
 
 /**
  *
  * @author elsow
  */
-public class MyHouseConcrete extends MyHome {
-   
+public abstract class HouseDecorator extends MyHome {
+    protected MyHome baseHome;
     
-    public MyHouseConcrete(){
-        //MyHome kitchen = new KitchenDecorator();
-        //MyHome livingRoom = new LivingRoomDecorator();
-        //homeDecorators.put(kitchen, 1);
-        //homeDecorators.put(livingRoom, 1);
+    public HouseDecorator(MyHome newHome){
+        baseHome = newHome;
     }
     
-    public String getDesc(){
-        return desc;
+    public String getDescription(){
+        return baseHome.desc;
     }
     
     public int cost(){
         return cost;
     }
-    
+
     public int area(){
         return area;
     }
+    public String getDesc(){
+        return desc;
+    };
+    
     public HashMap getHomeDecorators(){
         return homeDecorators; 
     };
+    
+    
+    
+    
 }

@@ -5,7 +5,6 @@
  */
 package com.mycompany.decoratorhouseelsowiny;
 
-import java.util.HashMap;
 
 /**
  *
@@ -29,11 +28,9 @@ public class KitchenDecorator extends HouseDecorator{
         return baseHome.area() + 500;
     }
     
-    public HashMap getHomeDecorators(){
-        return homeDecorators;
-    };
+  
     
     public String getDesc(){
-        return baseHome.getDesc() + ", kitchen";
+        return baseHome.getDesc() + ", Kitchen";
     }
 }

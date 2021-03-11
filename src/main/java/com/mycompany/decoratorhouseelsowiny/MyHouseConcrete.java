@@ -32,6 +32,8 @@ public class MyHouseConcrete extends MyHome {
     public int area(){
         return area;
     }
+    
+    //hash map for later use?
     public HashMap getHomeDecorators(){
         return homeDecorators; 
     };

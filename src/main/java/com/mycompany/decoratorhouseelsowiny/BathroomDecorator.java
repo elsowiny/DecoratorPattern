@@ -5,31 +5,28 @@
  */
 package com.mycompany.decoratorhouseelsowiny;
 
-import java.util.HashMap;
-
 /**
  *
  * @author elsow
  */
-public class LivingRoomDecorator extends HouseDecorator {
+public class BathroomDecorator extends HouseDecorator {
     
-    // protected MyHome baseHome;
-    public LivingRoomDecorator(MyHome newHome){
+    public BathroomDecorator(MyHome newHome){
         super(newHome);
-        System.out.println("Adding Living Room");
-        desc += " ,living room";
+        System.out.println("Adding bathroom");
+        desc += " ,Bathroom";
     }
     
     public int cost(){
-        return baseHome.cost() + 13544;
+        return baseHome.cost()+ 4000;
     }
     
     public int area(){
-        return baseHome.area() + 500;
+        return baseHome.area() + 120;
     }
-    
-    
+      
     public String getDesc(){
-        return baseHome.getDesc() + ", Living Room";
+        return baseHome.getDesc() + ", Bathroom";
     }
+    
 }

@@ -12,61 +12,78 @@ import java.util.Scanner;
  * @author elsow
  */
 public class HelperMethods {
-    
 
     //our helper methods that implement the decorators for us dependent on 
     //user input
-    
-    public static MyHome KitchenMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+    public static MyHome KitchenMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             System.out.println(i);
             smartHome = new KitchenDecorator(smartHome);
         }
         return smartHome;
     }
-    
-    
-    
-     public static MyHome LivingRoomMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+
+    public static MyHome LivingRoomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             System.out.println(i);
             smartHome = new LivingRoomDecorator(smartHome);
         }
         return smartHome;
     }
-     
-     
-     
-     public static MyHome MasterBedroomMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+
+    public static MyHome MasterBedroomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             smartHome = new MasterBedroomDecorator(smartHome);
         }
         return smartHome;
     }
-     
-    public static MyHome BigBedroomMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+
+    public static MyHome BigBedroomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             smartHome = new BigBedRoomDecorator(smartHome);
         }
         return smartHome;
-    } 
-    
-      public static MyHome SmallBedroomMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+    }
+
+    public static MyHome SmallBedroomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             smartHome = new SmallBedroomDecorator(smartHome);
         }
         return smartHome;
-    } 
-      
-      
-    public static MyHome BathroomMaker(int n, MyHome smartHome){
-        for(int i=1;i<=n;i++){
+    }
+
+    public static MyHome BathroomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
             smartHome = new BathroomDecorator(smartHome);
         }
         return smartHome;
-    }    
-      
-      
-      
+    }
+
+    public static MyHome StudyRoomMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
+            smartHome = new StudyRoomDecorator(smartHome);
+        }
+        return smartHome;
+    }
+
+    public static MyHome WalkInClosetMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
+            smartHome = new WalkInClosetDecorator(smartHome);
+        }
+        return smartHome;
+    }
     
+    public static MyHome ClosetMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
+            smartHome = new ClosetDecorator(smartHome);
+        }
+        return smartHome;
+    }
+
+     public static MyHome GarageMaker(int n, MyHome smartHome) {
+        for (int i = 1; i <= n; i++) {
+            smartHome = new CarGarageDecorator(smartHome);
+        }
+        return smartHome;
+    }
 }

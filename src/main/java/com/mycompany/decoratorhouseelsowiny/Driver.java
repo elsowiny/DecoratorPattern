@@ -59,7 +59,24 @@ public class Driver {
         
         System.out.println("How many Bathrooms would you like?\n");
         int bathrooms = scan.nextInt();
-        smartHome = HelperMethods.BathroomMaker(smallBedRooms, smartHome);
+        smartHome = HelperMethods.BathroomMaker(bathrooms, smartHome);
+        
+        System.out.println("How many Study Rooms would you like?\n");
+        int studyRooms = scan.nextInt();
+        smartHome = HelperMethods.StudyRoomMaker(studyRooms, smartHome);
+        
+        
+        System.out.println("How many Walk-in Closets would you like?\n");
+        int walkIns = scan.nextInt();
+        smartHome = HelperMethods.WalkInClosetMaker(walkIns, smartHome);
+        
+               System.out.println("How many Regular Closets would you like?\n");
+        int closets = scan.nextInt();
+        smartHome = HelperMethods.ClosetMaker(closets, smartHome);
+        
+        System.out.println("How many Garages would you like?\n");
+        int garages = scan.nextInt();
+        smartHome = HelperMethods.GarageMaker(garages, smartHome);
         
         
         // Closing Scanner after the use
